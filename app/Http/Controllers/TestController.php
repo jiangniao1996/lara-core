@@ -20,7 +20,7 @@ class TestController extends BaseController
 //                ->setSSLVerification(false)
                 ->build();
 
-        $r = $client->info();
+        $r = $client->create()->asArray();
         dd($r);
     }
 
